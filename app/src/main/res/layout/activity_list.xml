@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="propelsoft.in.foodconnectdb.ListActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/food_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20sp"
+                    android:paddingTop="5dp"
+                    android:text="Food Name"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="20sp"
+                    android:text="Rate"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_weight=".5"
+                    android:adjustViewBounds="false"
+                    android:src="@drawable/delete"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter" />
+
+
+                <ImageButton
+                    android:id="@+id/edit"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_weight=".5"
+                    android:adjustViewBounds="false"
+                    android:src="@drawable/edit"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id"
+            android:text="id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
